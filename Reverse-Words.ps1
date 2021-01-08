@@ -1,5 +1,13 @@
-﻿ Function Reverse-Words()
- {
+﻿<#
+Author: Mani Mohan Amam
+Objective: Write a Powershell function to reverse the words from a given string and
+           print the sentense with reverse words to output
+
+Sample Usage: Reverse-Words -string "Sample Program to reverse the words in a sentense"
+#>
+
+Function Reverse-Words()
+{
     param ($string)
     $str_array_rev = @()
     
@@ -22,3 +30,5 @@
     
     return $str_array_rev -join " "
 }
+
+Reverse-Words -string "Sample Program to reverse the words in a sentense"

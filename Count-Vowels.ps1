@@ -1,4 +1,11 @@
-﻿Function Count-Vowels()
+﻿<#
+Author: Mani Mohan Amam
+Objective: Write a PowerShell function to count Vowels and Constants in a given string
+
+Sample Usage: Count-Vowels -string "test program to count vowels and constants"
+#>
+
+Function Count-Vowels()
 {
     param($string)
     $vowel_counter = 0
@@ -21,5 +28,7 @@
         }
     }
     
-    Write-Host "No.Of Vowels and Constants in the given words are $vowel_counter & $constant_counter" -ForegroundColor Green
+    Write-Host "No.Of Vowels and Constants in the given string are $vowel_counter & $constant_counter" -ForegroundColor Green
 }
+
+Count-Vowels -string "test program to count vowels and constants"

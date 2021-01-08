@@ -1,4 +1,10 @@
-﻿Function Check-Palindrome()
+﻿<#
+Author: Mani Mohan Amam
+Objective: Write a PowerShell function to check if the given string is a Palindrome
+
+Sample Usage: Check-Palindrome -string "LIRIL"
+#>
+Function Check-Palindrome()
 {
 
     param($string)
@@ -18,3 +24,5 @@
         Write-Host "$string is not a palindrome" -ForegroundColor Red
     }
 }
+
+Check-Palindrome -string "LIRIL"

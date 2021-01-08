@@ -1,4 +1,11 @@
-﻿function RecurssiveTimer([int]$time){
+﻿<#
+Author: Mani Mohan Amam
+Objective: Write a Powershell recursive function to countdown n seconds
+
+Sample Usage: RecurssiveTimer -time 10
+#>
+
+function RecurssiveTimer([int]$time){
     if ($time -eq 0)
     {
         #write-host "$time*"

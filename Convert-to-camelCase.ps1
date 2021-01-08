@@ -1,4 +1,11 @@
-﻿Function Convert-to-cameCase()
+﻿<#
+Author: Mani Mohan Amam
+Objective: Write a PowerShell function to convert the given input string (seperated with spaces) to camelcase
+
+Sample Usage: Convert-to-cameCase -string "camel case test string"
+#>
+
+Function Convert-to-cameCase()
 {
     param($string)
     $string = (Get-Culture).TextInfo.ToTitleCase($string)
@@ -17,4 +24,4 @@
     return $cc_word
 }
 
-Convert-to-cameCase -string "madhura mani mohan amam"
+Convert-to-cameCase -string "camel case test string"

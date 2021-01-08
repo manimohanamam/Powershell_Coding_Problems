@@ -1,4 +1,11 @@
-﻿Function Find-Smallest-Largest()
+﻿<#
+Author: Mani Mohan Amam
+Objective: Write a PowerShell function to find the smallest and largest numbers in an array
+
+Sample Usage: Find-Smallest-Largest -array @(1,8,3,7,6,5,4,2,9,10)
+#>
+
+Function Find-Smallest-Largest()
 {
     param($array)
     
@@ -21,6 +28,8 @@
         }
     }
     
-    Write-Host "Smallest: $smallest at position $s_index"
-    Write-Host "Largest: $largest at position $l_index"
+    Write-Host "Smallest: $smallest at index $s_index"
+    Write-Host "Largest: $largest at index $l_index"
 }
+
+Find-Smallest-Largest -array @(9,8,3,7,10,5,4,2,1,6)

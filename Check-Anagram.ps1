@@ -1,4 +1,10 @@
-﻿Function Check-Anagram()
+﻿<#
+Author: Mani Mohan Amam
+Objective: Write a PowerShell function to check if the given 2 input strings are Anagrams of each other
+
+Sample Usage: Check-Anagram -string1 "LISTEN" -string2 "SILENT"
+#>
+Function Check-Anagram()
 {
     param($string1, $string2)
 
@@ -31,3 +37,5 @@
         Write-Host "Given Strings are not anagrams, they are of different string lengths" -ForegroundColor Red
     }
 }
+
+Check-Anagram -string1 "LISTEN" -string2 "SILENT"
